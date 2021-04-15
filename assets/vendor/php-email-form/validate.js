@@ -25,7 +25,7 @@
       thisForm.querySelector('.error-message').classList.remove('d-block');
       thisForm.querySelector('.sent-message').classList.remove('d-block');
 
-      let formData = new FormData( thisForm );
+      let formData = new FormData( event.target );
 
       if ( recaptcha ) {
         if(typeof grecaptcha !== "undefined" ) {
@@ -51,20 +51,14 @@
 
   function php_email_form_submit(thisForm, action, formData) {
 
-    // const axios = require('axios').default;
-
-    axios({
-      url: 'https://formspree.io/f/myylzgjl',
-      method: 'post',
+    fetch(action, {
+      method: thisForm.method,
+      body: formData,
       headers: {
         'Accept': 'application/json'
-      },
-      data: {
-        formData
       }
     }).then(response => {
 
-      console.log("response",response);
 
       if( response.ok ) {
         return response.text()
@@ -74,7 +68,8 @@
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+
+      if (JSON.parse(data)["ok"] === true) {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
