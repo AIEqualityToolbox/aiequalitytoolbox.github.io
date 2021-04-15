@@ -50,12 +50,22 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
-    fetch(action, {
-      method: 'POST',
-      body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
-    })
-    .then(response => {
+
+    // const axios = require('axios').default;
+
+    axios({
+      url: 'https://formspree.io/f/myylzgjl',
+      method: 'post',
+      headers: {
+        'Accept': 'application/json'
+      },
+      data: {
+        formData
+      }
+    }).then(response => {
+
+      console.log("response",response);
+
       if( response.ok ) {
         return response.text()
       } else {
