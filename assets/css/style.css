@@ -8,18 +8,31 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root {
+  --red: #b00;
+  --blue: #00b;
+  --fullwidth: 100%;
+  /*--textcolor: #5777ba; !*42C497 *!*/
+  /*--hovercolor: #7b94c9; !*83d8bb*!*/
+  /*--backgroundcolor: #e8ecf5; !*eaf9f4*!*/
+  --textcolor: #32a17b; /*42C497 */
+  --hovercolor: #83d8bb; /*83d8bb*/
+  --backgroundcolor: #eaf9f4; /*eaf9f4*/
+}
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #585a61;
 }
 
 a {
-  color: #5777ba;
+  color: var(--textcolor);
   text-decoration: none;
 }
 
 a:hover {
-  color: #7b94c9;
+  color: var(--hovercolor);
   text-decoration: none;
 }
 
@@ -37,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5777ba;
+  background: var(--textcolor);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -98,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
-  color: #5777ba;
+  color: var(--textcolor);
   text-decoration: none;
 }
 
@@ -148,11 +161,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #5777ba;
+  color: var(--textcolor);
 }
 
 .navbar .getstarted {
-  background: #5777ba;
+  background: var(--textcolor);
   color: #fff;
   padding: 12px 25px;
   margin-left: 30px;
@@ -198,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #5777ba;
+  color: var(--textcolor);
 }
 
 .navbar .dropdown:hover > ul {
@@ -293,7 +306,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #5777ba;
+  color: var(--textcolor);
 }
 
 .navbar-mobile .getstarted {
@@ -325,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #5777ba;
+  color: var(--textcolor);
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -350,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 250%;
   height: 200%;
   z-index: -1;
-  background-color: #e8ecf5;
+  background-color: var(--backgroundcolor);
   transform: skewY(135deg);
 }
 
@@ -359,7 +372,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 500;
   line-height: 56px;
-  color: #5777ba;
+  color: var(--textcolor);
   font-family: "Poppins", sans-serif;
 }
 
@@ -383,7 +396,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .download-btn:hover {
-  background: #5777ba;
+  background: var(--textcolor);
 }
 
 #hero .download-btn i {
@@ -455,7 +468,7 @@ section {
   font-weight: 400;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #5777ba;
+  color: var(--textcolor);
   font-family: "Poppins", sans-serif;
 }
 
@@ -529,7 +542,7 @@ section {
 .features .content .icon-box i {
   font-size: 48px;
   float: left;
-  color: #5777ba;
+  color: var(--textcolor);
 }
 
 .features .content .icon-box p {
@@ -578,7 +591,7 @@ section {
 .details .content ul i {
   font-size: 24px;
   padding-right: 2px;
-  color: #5777ba;
+  color: var(--textcolor);
   line-height: 0;
 }
 
@@ -607,11 +620,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #5777ba;
+  border: 1px solid var(--textcolor);
 }
 
 .gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5777ba;
+  background-color: var(--textcolor);
 }
 
 .gallery .swiper-slide-active {
@@ -623,7 +636,7 @@ section {
     padding: 40px 0;
   }
   .gallery .swiper-slide-active {
-    border: 6px solid #5777ba;
+    border: 6px solid var(--textcolor);
     padding: 4px;
     background: #fff;
     z-index: 1;
@@ -700,11 +713,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #5777ba;
+  border: 1px solid var(--textcolor);
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5777ba;
+  background-color: var(--textcolor);
 }
 
 /*--------------------------------------------------------------
@@ -730,7 +743,7 @@ section {
 
 .pricing h4 {
   font-size: 46px;
-  color: #5777ba;
+  color: var(--textcolor);
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 25px;
@@ -755,7 +768,7 @@ section {
 }
 
 .pricing ul i {
-  color: #5777ba;
+  color: var(--textcolor);
   font-size: 18px;
   padding-right: 4px;
 }
@@ -786,7 +799,7 @@ section {
 }
 
 .pricing .get-started-btn:hover {
-  background: #5777ba;
+  background: var(--textcolor);
 }
 
 .pricing .featured {
@@ -795,7 +808,7 @@ section {
 }
 
 .pricing .featured .get-started-btn {
-  background: #5777ba;
+  background: var(--textcolor);
 }
 
 .pricing .featured .get-started-btn:hover {
@@ -887,7 +900,7 @@ section {
 }
 
 .faq .accordion-list a.collapsed:hover {
-  color: #5777ba;
+  color: var(--textcolor);
 }
 
 .faq .accordion-list a.collapsed .icon-show {
@@ -993,7 +1006,7 @@ section {
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #5777ba;
+  border-color: var(--textcolor);
 }
 
 .contact .php-email-form input {
@@ -1006,16 +1019,16 @@ section {
 
 .contact .php-email-form button[type="submit"] {
   background: #fff;
-  border: 2px solid #5777ba;
+  border: 2px solid var(--textcolor);
   padding: 10px 24px;
-  color: #5777ba;
+  color: var(--textcolor);
   transition: 0.4s;
   border-radius: 50px;
   margin-top: 5px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #5777ba;
+  background: var(--textcolor);
   color: #fff;
 }
 
@@ -1101,7 +1114,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #5777ba;
+  background: var(--textcolor);
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -1182,13 +1195,13 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #5777ba;
+  color: var(--textcolor);
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #5777ba;
+  background: var(--textcolor);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
