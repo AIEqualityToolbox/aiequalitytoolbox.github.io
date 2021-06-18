@@ -18,6 +18,10 @@
   --backgroundcolor: #eaf9f4; /*eaf9f4*/
 }
 
+.text-color {
+  color: var(--textcolor);
+}
+
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -867,6 +871,12 @@ section {
   padding: 0 30px;
   outline: none;
   cursor: pointer;
+}
+
+.normal-link {
+  display: inline !important;
+  font-weight: normal !important;
+  padding: 10px 0 0 !important;
 }
 
 .faq .accordion-list .icon-help {
