@@ -553,6 +553,15 @@ section {
   margin-left: 60px;
 }
 
+.features .content .icon-box .small {
+  font-size: 20px;
+  float: none !important;
+}
+
+.features .content .icon-box a:hover i{
+  color: var(--hovercolor);
+}
+
 @media (max-width: 991px) {
   .features .image {
     text-align: center;
