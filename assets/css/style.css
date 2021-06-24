@@ -15,9 +15,9 @@
   /*--backgroundcolor: #e8ecf5; !*eaf9f4*!*/
   --dark-icon-color: #144031; /*47536e */
   --textcolor: #32a17b; /*42C497 */
+  --navhover: #5ab395; /*#748ec6*/
   --hovercolor: #83d8bb; /*83d8bb*/
-    --navhover: #5ab395; /*#748ec6*/
-    --backgroundcolor: #eaf9f4; /*eaf9f4*/
+  --backgroundcolor: #eaf9f4; /*eaf9f4*/
 }
 
 .text-color {
