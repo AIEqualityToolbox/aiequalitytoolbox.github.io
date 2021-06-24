@@ -16,7 +16,8 @@
   --dark-icon-color: #144031; /*47536e */
   --textcolor: #32a17b; /*42C497 */
   --hovercolor: #83d8bb; /*83d8bb*/
-  --backgroundcolor: #eaf9f4; /*eaf9f4*/
+    --navhover: #5ab395; /*#748ec6*/
+    --backgroundcolor: #eaf9f4; /*eaf9f4*/
 }
 
 .text-color {
@@ -66,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #748ec6;
+  background: var(--navhover);
   color: #fff;
 }
 
@@ -177,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .getstarted:hover {
-  background: #748ec6;
+  background: var(--navhover);
   color: #fff;
 }
 
@@ -823,7 +824,7 @@ section {
 }
 
 .pricing .featured .get-started-btn:hover {
-  background: #748ec6;
+  background: var(--navhover);
 }
 
 @media (max-width: 992px) {
