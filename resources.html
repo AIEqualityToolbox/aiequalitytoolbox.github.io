@@ -57,7 +57,8 @@
                 <li><a class="nav-link scrollto" href="index.html">Home</a></li>
 <!--                <li><a class="nav-link scrollto" href="motivation.html">Motivation</a></li>-->
                 <li><a class="nav-link scrollto" href="workshop.html">Workshop</a></li>
-                <li><a class="nav-link scrollto active" href="resources.html">Library</a></li>
+                <li><a class="nav-link scrollto active" href="resources.html">Resources</a></li>
+                <li><a class="nav-link scrollto" href="library.html">Library</a></li>
                 <li><a class="nav-link scrollto" href="events.html">Events</a></li>
                 <li><a class="nav-link scrollto" href="faq.html">F.A.Q</a></li>
                 <li><a class="getstarted scrollto active" href="contact.html">Contact Us</a></li>
@@ -75,109 +76,45 @@
         <div class="container">
 
             <div class="d-flex justify-content-between align-items-center">
-                <h2>Library</h2>
+                <h2>Material and Resources</h2>
                 <ol>
                     <li><a href="index.html">Home</a></li>
-                    <li>Library</li>
+                    <li>Resources</li>
                 </ol>
             </div>
 
         </div>
     </section><!-- End Breadcrumbs Section -->
 
-    <div class="container d-flex align-items-center justify-content-between ">
-        <nav class="navbar">
-            <ul>
-                <li><a class="nav-link scrollto" href="#resources">Workshop Resources</a></li>
-                <li><i class="bi bi-dot"></i></li>
-                <li><a class="nav-link scrollto " href="#human-resources">Human Rights</a></li>
-                <li><i class="bi bi-dot"></i></li>
-                <li><a class="nav-link scrollto" href="#appliedresearch">Applied Research</a></li>
-                <li><i class="bi bi-dot"></i></li>
-                <li><a class="nav-link scrollto" href="#fairness">Fairness Literature</a></li>
-                <li><i class="bi bi-dot"></i></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-    </div>
 
     <section class="inner-page" id="resources">
         <div class="container">
             <div class="row content">
-                <h1>Library</h1>
+                <h1>Material and Resources</h1>
                 <p>
                     Material and extra resources that are used in the workshop.
-                    Related literature in algorithmic bias, fairness and human rights.
                 </p>
             </div>
 
-            <div class="features">
-                <div class="row content">
-                    <div class="col-md-3 order-1 order-md-1 " data-aos="fade-left">
-                        <img src="assets/img/undraw_book_lover_mkck.svg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-9 order-2 order-md-2" data-aos="fade-up">
-                        <div class="row">
-                            <div class="col-md-6 icon-box" data-aos="fade-up">
-                                <a href="assets/pdf/Section%201%20Introduction%20to%20Human%20Rights.pdf" class="download-btn"
-                                   target="_blank">
-                                    <i class="bi bi-people "></i>
-                                </a>
-                                <a href="assets/pdf/Section%201%20Introduction%20to%20Human%20Rights.pdf" class="download-btn"
-                                   target="_blank">
-                                    <h4> Human Rights module <i class="bi bi-download small"></i></h4>
-                                </a>
-                                <p>Human rights and their principles. Equality and non-discrimination.
-                                    A human rights-based approach. Legal resources.
-                                </p>
-                            </div>
-                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                                <a href="https://colab.research.google.com/drive/11SWijBDkr1pSgIXyjUkgoSB0gh5oAlaI?usp=sharing"
-                                   class="download-btn" target="_blank">
-                                    <i class='bx bx-code'></i>
-                                </a>
-                                <h4>
-                                    <a href="https://colab.research.google.com/drive/11SWijBDkr1pSgIXyjUkgoSB0gh5oAlaI?usp=sharing"
-                                       class="download-btn" target="_blank">
-                                        Jupyter notebook <i class="bi bi-download small"></i>
-                                    </a>
-                                </h4>
-                                <p>A Jupyter notebook with code and exercises to apply in practice the concepts
-                                    learned</p>
-                            </div>
-<!--                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">-->
-<!--                                <a href="assets/pdf/PidouxJessica.pdf" class="download-btn" target="_blank">-->
-<!--                                    <i class="bi bi-file-earmark-code"></i>-->
-<!--                                </a>-->
-<!--                                <a href="assets/pdf/PidouxJessica.pdf" class="download-btn" target="_blank">-->
-<!--                                    <h6><strong> The social impact of development choices: Tinder usecase</strong>-->
-<!--                                        <i class="bi bi-download small"></i></h6>-->
-<!--                                </a>-->
-<!--                                <p>-->
-<!--                                    Researcher: Dr. Jessica Pidoux-->
-<!--                                </p>-->
-<!--                                <p> The impact of inequalities produced by development choices through a practical case-->
-<!--                                    study; the dating app Tinder-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">-->
-<!--                                <a href="assets/pdf/AI_&_Equality-Terminology_Handout.pdf" class="download-btn"-->
-<!--                                   target="_blank">-->
-<!--                                    <i class='bx bx-book-bookmark'></i>-->
-<!--                                </a>-->
-<!--                                <h4>-->
-<!--                                    <a href="assets/pdf/AI_&_Equality-Terminology_Handout.pdf" class="download-btn"-->
-<!--                                       target="_blank">-->
-<!--                                        Terminology <i class="bi bi-download small"></i>-->
-<!--                                    </a>-->
-<!--                                </h4>-->
-<!--                                <p>Dictionary for the terms.</p>-->
-<!--                            </div>-->
-                        </div>
-
-                    </div>
+            <div class="row content">
+                <div id="toc_container">
+                    <p class="toc_title">Contents</p>
+                    <ul class="toc_list">
+                        <li><a class="scrollto" href="#human-resources">Human Rights Resources</a></li>
+                        <li><a class="scrollto" href="#fairness">Fairness Literature</a></li>
+                        <ul>
+                            <li><a class="scrollto" href="#books">Books</a></li>
+                            <li><a class="scrollto" href="#First_Sub_Point_2">Papers</a></li>
+                        </ul>
+                        <li><a class="scrollto" href="#workshop">Workshop material</a></li>
+                        <ul>
+                            <li><a class="scrollto" href="#notebook">Jupyter notebook</a></li>
+                            <li><a class="scrollto" href="#notebook">Thesis</a></li>
+                        </ul>
+                    </ul>
                 </div>
             </div>
+
 
         </div>
     </section>
@@ -186,11 +123,9 @@
         <div class="container">
             <div class="row content">
 
-                <h3>Human Rights Resources</h3>
+                <h1>Human Rights Resources</h1>
 
-
-
-                <div class="col-md-6 pt-4" data-aos="fade-up">
+                <div class="col-md-4" data-aos="fade-up">
 
                     <p>
                         <strong>Human Rights module</strong>
@@ -239,7 +174,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-6 pt-4" data-aos="fade-right">
+                <div class="col-md-4" data-aos="fade-left">
+                    <img src="assets/img/undraw_Bookshelves.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-4" data-aos="fade-right">
                     <p>
                         <strong>Legal documents:</strong>
                     </p>
@@ -281,52 +219,6 @@
             </div>
 
 
-            <div class="row content pt-5" id="appliedresearch">
-                <div class="col-md-8 pt-4" data-aos="fade-up">
-                    <h3>University research Library</h3>
-                    <p class="fst-italic">
-                        Research material from universities
-                    </p>
-
-                    <div class="col-md-10" data-aos="fade-up">
-                        <!--<h3>Books </h3>-->
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">What is the social impact of development practices on dating?</h5>
-                                <p class="card-text">
-                                <ul style="list-style: none; padding: 0;">
-                                    <li><i class='bi bi-person-fill text-color'></i>
-                                        <strong>Researcher:</strong>
-                                        Dr. Jessica Pidoux
-                                    </li>
-                                     <li><i class="fas fa-university text-color"></i>
-                                        <strong>University:</strong>
-                                        EPFL, Lausanne, Switzerland
-                                    </li>
-
-                                </ul>
-                                Review of the development choices of Tinder's matching system and its social impact on gender, and more broadly on couple formation, through a qualitative analysis. This type of analysis should help data scientists and engineers to reflect on their daily practices and learn to justify their choices when defining algorithms.
-                                </p>
-
-
-
-                                <nav class="navbar pt-2">
-                                    <a href="social-impact-tinder-pidoux.html" class="btn getstarted">Read more</a>
-                                </nav>
-
-
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-                <div class="col-md-4" data-aos="fade-right">
-                    <img src="assets/img/undraw_Bookshelves.svg" class="img-fluid" alt="">
-                </div>
-            </div>
 
         </div>
     </section>
@@ -340,7 +232,7 @@
                 </p>
             </div>
 
-            <div class="row content">
+            <div class="row content" id="books">
                 <div class="col-md-4" data-aos="fade-right">
                     <img src="assets/img/undraw_reading_time.svg" class="img-fluid" alt="">
                 </div>
@@ -376,6 +268,55 @@
                         </li>
                     </ul>
 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="inner-page " id="workshop">
+        <div class="container">
+            <div class="row content">
+                <h1>Workshop material</h1>
+                <p>
+                    Coding exercises and the jupyter notebook that is used in the workshop.
+                </p>
+            </div>
+
+            <div class="row content" >
+                <div class="col-md-4" data-aos="fade-right">
+                    <img src="assets/img/undraw_pair_programming_re_or4x.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-8 pt-4" data-aos="fade-up">
+
+                    <div class="row" id="notebook">
+                        <div class="col-md-6 pt-4" data-aos="fade-up">
+                            <a href="https://colab.research.google.com/drive/11SWijBDkr1pSgIXyjUkgoSB0gh5oAlaI?usp=sharing"
+                               class="download-btn" target="_blank" >
+<!--                                <i class='bx bx-code'></i>-->
+                            </a>
+                            <h4>
+                                <a href="https://colab.research.google.com/drive/11SWijBDkr1pSgIXyjUkgoSB0gh5oAlaI?usp=sharing"
+                                   class="download-btn" target="_blank">
+                                    Jupyter notebook <i class="bi bi-download small"></i>
+                                </a>
+                            </h4>
+                            <p>A Jupyter notebook with code and exercises to apply in practice the concepts
+                                learned</p>
+                        </div>
+                        <div class="col-md-6 pt-4" data-aos="fade-up">
+                            <a href="assets/pdf/_AI___Equality__A_Human_Rights_Toolbox___Sofia_Kypraiou__Master_thesis_.pdf" target="_blank">
+                                <!--                                <i class='bx bx-code'></i>-->
+                            </a>
+                            <h4>
+                                <a href="assets/pdf/_AI___Equality__A_Human_Rights_Toolbox___Sofia_Kypraiou__Master_thesis_.pdf"
+                                   class="download-btn" target="_blank">
+                                    Master thesis <i class="bi bi-download small"></i>
+                                </a>
+                            </h4>
+                            <p>The master thesis that supports the workshop</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
